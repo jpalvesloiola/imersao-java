@@ -1,8 +1,8 @@
 # alura-stickers
 <h1>AULA 01 - CONSUMINDO UMA API DE FILMES COM JAVA</h1>
 
-Links, dicas e notas de aula
-Boas-vindas! Chegou a hora de mergulhar em Java com a primeira Imersão Java da Alura!
+<h3>Links, dicas e notas de aula
+Boas-vindas! Chegou a hora de mergulhar em Java com a primeira Imersão Java da Alura!</h3>
 
 Nesta primeira aula, vamos construir uma aplicação do zero para consumir a API do IMDb e exibir os filmes mais populares, destacando seus pôsteres e visualizando sua classificação... Tudo isso sem usar nenhuma biblioteca externa!
 
@@ -19,7 +19,7 @@ A API do IMDB, usada durante esta aula, saiu do ar hoje. A comunidade criou ende
   <li>(https://raw.githubusercontent.com/alexfelipe/imersao-java/json/top250.json) criada pelo instrutor Alex Felipe</li>
 </ul>
 
-Links citados durante a aula:
+<h2>Links citados durante a aula:</h2>
  
 <ul>
   <li>Os 250 melhores filmes de acordo com a classificação do IMDB.</li>
