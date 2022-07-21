@@ -31,7 +31,7 @@ A API do IMDB, usada durante esta aula, saiu do ar hoje. A comunidade criou ende
   <li>Site que ajuda a entender Expressões Regulares.</li>
   <li>Artigo: Como deixar no seu GitHub com um README interessante.</li>
   <li>O endpoint da API do IMDB que devolve os 250 melhores filmes: https://imdb-api.com/en/API/Top250Movies/ + SUA-API-KEY</li>
-</ul>
+</ul> 
 
 <h2>Desafios desta aula</h2>
 
