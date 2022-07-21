@@ -19,6 +19,7 @@ public class App {
         var requisicao = HttpRequest.newBuilder(endereco).GET().build();
         HttpResponse<String> resposta = cliente.send(requisicao, BodyHandlers.ofString());
         String body = resposta.body();
+        //System.out.println(body);
 
         // extrair(parsear) dados (titulo, posters, classificacao)
         var parser = new JsonParser();
@@ -29,9 +30,9 @@ public class App {
         for (Map<String,String> filme : listaDeFilmes) {
             System.out.println("\u001b[37m\u001b[44m\u001b[1m Titulo: " + filme.get("title") + " \u001b[m");
             System.out.println("\u001b[33m\u001b[42m\u001b[1m Poster: " + filme.get("image") + "\u001b[m");
-            System.out.println("\u001b[41m\u001b[26m\u001b[1m Classificação: " + filme.get("imDbRating") + " \u001b[m");
+            System.out.printf("\u001b[41m\u001b[26m\u001b[1m Classificação: %s/10\u001b[m\n", filme.get("imDbRating"));
+            
             for (int i = 0; i < Float.parseFloat(filme.get("imDbRating")); i++) {
-                
                 System.out.print("\u001b[5m⭐");
             }
             System.out.printf("\n\n");
