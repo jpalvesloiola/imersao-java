@@ -1,53 +1,72 @@
-# alura-stickers
-<h1>AULA 01 - CONSUMINDO UMA API DE FILMES COM JAVA</h1>
+<h1>AULA 02 - GERANDO FIGURINHAS PARA WHATSAPP</h1>
 
-<h3>Links, dicas e notas de aula
-Boas-vindas! Chegou a hora de mergulhar em Java com a primeira Imersão Java da Alura!</h3>
+<h2>Links, dicas e notas de aula
+Boas-vindas! Esta é a segunda aula da Imersão Java.</h2>
 
-Nesta primeira aula, vamos construir uma aplicação do zero para consumir a API do IMDb e exibir os filmes mais populares, destacando seus pôsteres e visualizando sua classificação... Tudo isso sem usar nenhuma biblioteca externa!
+Nesta segunda aula vamos criar um gerador de figurinhas explorando outras bibliotecas nativas do Java, para que possamos enviar por Whatsapp os nossos filmes preferidos!
 
-Abaixo disponibilizamos todo o material para que você acompanhe a aula e avance em seu projeto.
-
-API do IMDB fora do ar
-A API do IMDB, usada durante esta aula, saiu do ar hoje. A comunidade criou endereços alternativos que você pode usar no lugar da URL, são eles:
+<h3>APIs semelhates ao IMDB:</h3>
 
 <ul>
-  <li>(https://mocki.io/v1/9a7c1ca9-29b4-4eb3-8306-1adb9d159060) criada pelo @rezendecas</li>
-  <li>(https://alura-imdb-api.herokuapp.com/movies) criada pelo Jhon Santana</li>
-  <li>(https://api.mocki.io/v2/549a5d8b) criada pelo instrutor Alexandre Aquiles</li>
-  <li>(https://alura-filmes.herokuapp.com/conteudos) criada pela instrutora Jacqueline Oliveira</li>
-  <li>(https://raw.githubusercontent.com/alexfelipe/imersao-java/json/top250.json) criada pelo instrutor Alex Felipe</li>
+  <li>(https://api.mocki.io/v2/549a5d8b/Top250Movies)</li>
+  <li>(https://api.mocki.io/v2/549a5d8b/MostPopularMovies)</li>
+  <li>(https://api.mocki.io/v2/549a5d8b/MostPopularTVs)</li>
+  <li>(https://api.mocki.io/v2/549a5d8b/Top250TVs)</li>
 </ul>
 
-<h2>Links citados durante a aula:</h2>
- 
+<h3>Segue também uma solução inspirada na que foi criada ontem pelo instrutor Alex Felipe:</h3>
+
+<li>(https://raw.githubusercontent.com/alura-cursos/imersao-java/api/TopMovies.json)</li>
+<li>(https://raw.githubusercontent.com/alura-cursos/imersao-java/api/MostPopularMovies.json)</li>
+<li>(https://raw.githubusercontent.com/alura-cursos/imersao-java/api/MostPopularTVs.json)</li>
+<li>(https://raw.githubusercontent.com/alura-cursos/imersao-java/api/TopTVs.json)</li>
+
+<cite>
+  Para utilizar os endereços alternativos, troque a URL da aula pelas novas URLs:
+
+  // String url = "https://imdb-api.com/en/API/Top250Movies/k_0ojt0yvm";
+  String url = "https://raw.githubusercontent.com/alura-cursos/imersao-java/api/TopMovies.json";
+</cite>
+
+<h3>Links citados</h3>
 <ul>
-  <li>Os 250 melhores filmes de acordo com a classificação do IMDB.</li>
-  <li>A documentação da API do IMDB.</li>
-  <li>Instalação do Visual Studio Code com o Coding Pack para Java</li>
-  <li>Documentação da classe HttpRequest do pacote java.net.http.</li>
-  <li>Classe pronta que utiliza Expressões Regulares para fazer parse de um JSON.</li>
-  <li>Biblioteca Jackson, que faz parse de JSON https://github.com/FasterXML/jackson.</li>
-  <li>Site que ajuda a entender Expressões Regulares.</li>
-  <li>Artigo: Como deixar no seu GitHub com um README interessante.</li>
-  <li>O endpoint da API do IMDB que devolve os 250 melhores filmes: https://imdb-api.com/en/API/Top250Movies/ + SUA-API-KEY</li>
+  <li>Documentação do pacote javax.imageio, que trata de leitura e escrita de imagens.</li>
+
+  <li>Documentação da classe BufferedImage, que representa uma imagem no Java</li>
+
+  <li>Documentação da classe Graphics2D, a “caneta” que permite escrever, desenhar e imprimir outras imagens em uma imagem original.</li>
+
+  <li>Documentação da abstração InputStream, que representa um fluxo de leitura de dados de qualquer fonte, como arquivos, URLs, entre outros.</li>
 </ul>
 
-<h2>Desafios desta aula</h2>
-
+<h3>Desafios</h3>
 <ul>
-  <li>Usar sua criatividade para deixar a saída dos dados mais bonitinha: usar emojis com código UTF-8, mostrar a nota do filme como estrelinhas, decorar o terminal com cores, negrito e itálico usando códigos ANSI, e mais!</li>
-  <li>Colocar a chave da API do IMDB em algum lugar fora do código como um arquivo de configuração (p. ex, um arquivo .properties) ou uma variável de ambiente</li>
-  <li>Mudar o JsonParser para usar uma biblioteca de parsing de JSON como Jackson ou GSON</li>
-  <li>Desafio supremo: criar alguma maneira para você dar uma avaliação ao filme, puxando de algum arquivo de configuração OU pedindo a avaliação para o usuário digitar no terminal.</li>
+  <li>Ler a documentação da classe abstrata InputStream.</li>
+  <li>Centralizar o texto na figurinha.</li>
+  <li>Fazer um pacote no Whatsapp e/ou Telegram com as suas próprias figurinhas!</li>
+  <li>Criar diretório de saída das imagens, se ainda não existir.</li>
+  <li>Colocar outra fonte como a Comic Sans ou a Impact, a fonte usada em memes.</li>
+  <li>Colocar uma imagem de você que está fazendo esse curso sorrindo, fazendo joinha!</li>
+  <li>Colocar contorno (outline) no texto da imagem.</li>
+  <li>Tratar as imagens retornadas pela API do IMDB para pegar uma imagem maior ao invés dos thumbnails. Opções: pegar a URL da imagem e remover o trecho mostrado durante a aula ou consumir o endpoint de posters da API do IMDB (mais trabalhoso), tratando o JSON retornado.</li>
+  <li>Fazer com que o texto da figurinha seja personalizado de acordo com as classificações do IMDB.</li>
+  <li>Desafio supremo: usar alguma biblioteca de manipulação de imagens como OpenCV pra extrair imagem principal e contorná-la.</li>
+  <li></li>
+  <li></li>
+  <li></li>
 </ul>
 
-<h2>Material complementar</h2>
+<h3>Material complementar</h3>
 <ul>
-  <li>Artigo na Alura “O que é JSON?”.</li>
-  <li>Artigo na Alura sobre como pintar o terminal, com tabelinha de cores e negrito.</li>
-  <li>Artigo na Alura sobre como usar VS Code para codar em Java.</li>
+  <li></li>
+  <li>Primeira aula do curso “Java Polimorfismo: entenda herança e interfaces” da Alura.</li>
+  <li>Apêndice da apostila “Java e Orientação a Objetos” da Alura sobre o pacote java.io que explica com mais detalhes a abstração InputStream.</li>
 </ul>
+
+
+
+
+
 
 
 
