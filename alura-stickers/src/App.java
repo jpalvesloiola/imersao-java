@@ -9,7 +9,7 @@ public class App {
         // busca API no arquivo properties
         Properties properties = ArquivoDePropriedades.getProp();
         // var extrator = new ExtratorDeConteudoDaNasa();
-        ExtratorDeConteudo extrator = new ExtratorDeConteudoDoIMDB();
+        ExtratorDeConteudo extrator = new ExtratorDeConteudoDeLinguagens();
 
         // criar conexao HTTP e busca os top 250 filmes
         ClienteHTTP clienteHTTP = new ClienteHTTP();
