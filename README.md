@@ -18,7 +18,7 @@ O código da Aula 4 pode ser encontrado na branch [aula4](https://github.com/jpa
 
 ## Aula 5
 
-O código da Aula 5 pode ser encontrado na branch [aula4](https://github.com/jpalvesloiola/alura-stickers/tree/Aula-5) nos diretórios `alura-stickers` e `linguagens-api`.
+O código da Aula 5 pode ser encontrado na branch [aula5](https://github.com/jpalvesloiola/alura-stickers/tree/Aula-5) nos diretórios `alura-stickers` e `linguagens-api`.
 
 
 
