@@ -39,7 +39,7 @@ Nesta segunda aula vamos criar um gerador de figurinhas explorando outras biblio
   <li>Documentação da abstração InputStream, que representa um fluxo de leitura de dados de qualquer fonte, como arquivos, URLs, entre outros.</li>
 </ul>
 
-<h3>Desafios</h3>
+<h2>Desafios</h2>
 <ul>
   <li>Ler a documentação da classe abstrata InputStream.</li>
   <li>Centralizar o texto na figurinha.</li>
@@ -51,14 +51,10 @@ Nesta segunda aula vamos criar um gerador de figurinhas explorando outras biblio
   <li>Tratar as imagens retornadas pela API do IMDB para pegar uma imagem maior ao invés dos thumbnails. Opções: pegar a URL da imagem e remover o trecho mostrado durante a aula ou consumir o endpoint de posters da API do IMDB (mais trabalhoso), tratando o JSON retornado.</li>
   <li>Fazer com que o texto da figurinha seja personalizado de acordo com as classificações do IMDB.</li>
   <li>Desafio supremo: usar alguma biblioteca de manipulação de imagens como OpenCV pra extrair imagem principal e contorná-la.</li>
-  <li></li>
-  <li></li>
-  <li></li>
 </ul>
 
-<h3>Material complementar</h3>
+<h2>Material complementar</h2>
 <ul>
-  <li></li>
   <li>Primeira aula do curso “Java Polimorfismo: entenda herança e interfaces” da Alura.</li>
   <li>Apêndice da apostila “Java e Orientação a Objetos” da Alura sobre o pacote java.io que explica com mais detalhes a abstração InputStream.</li>
 </ul>
